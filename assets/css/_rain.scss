@@ -1,0 +1,15 @@
+.drop{
+    position: absolute;
+	top: -20px;
+    animation: fall linear forwards;
+    &::after{
+        content: "?";
+        color: $error-text-color;
+    }
+}
+
+@keyframes fall {
+	to {
+		transform: translateY(105vh);
+	}
+}

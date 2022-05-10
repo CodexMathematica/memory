@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include flexCenter(); /* Voir mixin */
+    height: 100vh;
+	overflow: hidden;
+    background-color: $primary-color;
+    position: relative;
+}
+
+.btn {
+    margin: 1em;
+    background-color: $btn-bg-color;
+    border: none;
+    border-radius: 14px;
+    color: $text-color;
+    padding: 7px 14px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    &:hover{
+        cursor: pointer;
+        background-color: $transparent-color;
+    }
+}
+
+h1, h2, p {
+    text-align: center;
+    color: $text-color;
+}
+
+.rule {
+    color: $error-text-color;
+}
